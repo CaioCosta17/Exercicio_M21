@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Teste</title>
+    <link rel="stylesheet" href="./dist/css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+    <style>
+        .hero {
+            background-image: url(./src/images/herobackground.jpg);
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__container">
+            <h1>
+                <img class="header__logo" src="./src/images/logo.png" alt="O Senhor dos Anéis">
+            </h1>
+            <ul class="header__links">
+                <li class="header__links__item">
+                    <a class="button button--secondary" href="#">Cadastrar</a>
+                </li>
+                <li class="header__links__item">
+                    <a class="button button--dark" href="#">Entrar</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero__content">
+        </div>
+    </section>
+
+<section class="shows">
+    <nav class="shows__tabs">
+        <button data-tab-button="conheca_mais" class="shows__tabs__button title--small shows__tabs__button--is-active">
+            Conheça Mais
+        </button>
+        <button data-tab-button="populares" class="shows__tabs__button title--small">
+            Mais Populares
+        </button>
+        <button data-tab-button="livros" class="shows__tabs__button title--small">
+            Livros da Série
+        </button>
+    </nav>
+        <ul data-tab-id="conheca_mais" class="shows__list shows__list--is-active">
+            <li class="shows__list__item">
+                <img src="./src/images/herobackground.jpg" alt="Lord of the Rings">
+            </li>
+            <li class="shows__list__item">
+                <img src="./src/images/herobackground.jpg" alt="Lord of the Rings">
+            </li>
+            <li class="shows__list__item">
+                <img src="./src/images/herobackground.jpg" alt="Lord of the Rings">
+            </li>
+            <li class="shows__list__item">
+                <img src="./src/images/herobackground.jpg" alt="Lord of the Rings">
+            </li>
+            <li class="shows__list__item">
+                <img src="./src/images/herobackground.jpg" alt="Lord of the Rings">
+            </li>
+            <li class="shows__list__item">
+                <img src="./src/images/herobackground.jpg" alt="Lord of the Rings">
+            </li>
+        </ul>
+        <ul data-tab-id="populares" class="shows__list">
+            <li class="shows__list__item">
+                <img src="./src/images/herobackground.jpg" alt="Lord of the Rings">
+            </li>
+            <li class="shows__list__item">
+                <img src="./src/images/herobackground.jpg" alt="Lord of the Rings">
+            </li>
+            <li class="shows__list__item">
+                <img src="./src/images/herobackground.jpg" alt="Lord of the Rings">
+            </li>
+            <li class="shows__list__item">
+                <img src="./src/images/herobackground.jpg" alt="Lord of the Rings">
+            </li>
+            <li class="shows__list__item">
+                <img src="./src/images/herobackground.jpg" alt="Lord of the Rings">
+            </li>
+            <li class="shows__list__item">
+                <img src="./src/images/herobackground.jpg" alt="Lord of the Rings">
+            </li>
+        </ul>
+        <ul data-tab-id="livros" class="shows__list">
+            <li class="shows__list__item">
+                <img src="./src/images/herobackground.jpg" alt="Lord of the Rings">
+            </li>
+            <li class="shows__list__item">
+                <img src="./src/images/herobackground.jpg" alt="Lord of the Rings">
+            </li>
+            <li class="shows__list__item">
+                <img src="./src/images/herobackground.jpg" alt="Lord of the Rings">
+            </li>
+            <li class="shows__list__item">
+                <img src="./src/images/herobackground.jpg" alt="Lord of the Rings">
+            </li>
+            <li class="shows__list__item">
+                <img src="./src/images/herobackground.jpg" alt="Lord of the Rings">
+            </li>
+            <li class="shows__list__item">
+                <img src="./src/images/herobackground.jpg" alt="Lord of the Rings">
+            </li>
+        </ul>
+    </section>
+
+    <section class="plans">
+        <h2 class="title--big">Assita também</h2>
+        <ul class="plans__list">
+            <li class="plans__list__item">
+                <img src="./src/images/filme_capa2.jpg" alt="Disney+">
+                <strong class="title--small">O Senhor dos Anéis As Duas Torres</strong>
+                <p class="text--big">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum nisi minus dolor autem excepturi.
+                </p>
+                <button class="button">Assista Agora</button>
+            </li>
+            <li class="plans__list__item">
+                <img src="./src/images/fav_filme_capa.jpg" alt="Filme Lord of the Rings">
+                <strong class="title--small">O Senhor dos Anéis A Sociedade do Anel
+                </strong>
+                <p class="text--big">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum nisi minus dolor autem excepturi.
+                </p>
+                <button class="button">Assista Agora</button>
+            </li>
+            <li class="plans__list__item">
+                <img src="./src/images/filme_capa3.jpg" alt="Disney+">
+                <strong class="title--small">O Senhor dos Anéis A Sociedade do Anel</strong>
+                <p class="text--big">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum nisi minus dolor autem excepturi.
+                </p>
+                <button class="button">Assista Agora</button>
+            </li>
+        </ul>
+    </section>
+
+    <section class="faq">
+        <h2 class="title--big">Perguntas Frequentes</h2>
+        <ul class="faq__questions">
+            <li class="faq__questions__item">
+                <div data-faq-question class="faq__questions__item__question">
+                    Pergunta?
+                </div>
+                <div class="faq__questions__item__answer text--big">
+                    A resposta da pergunta
+                </div>
+            </li>
+            <li class="faq__questions__item">
+                <div data-faq-question class="faq__questions__item__question">
+                    Pergunta?
+                </div>
+                <div class="faq__questions__item__answer text--big">
+                    A resposta da pergunta
+                </div>
+            </li>
+            <li class="faq__questions__item">
+                <div data-faq-question class="faq__questions__item__question">
+                    Pergunta?
+                </div>
+                <div class="faq__questions__item__answer text--big">
+                    A resposta da pergunta
+                </div>
+            </li>
+        </ul>
+    </section>
+    <script src="./src/main.js"></script>
+</body>
+</html>

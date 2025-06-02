@@ -1,0 +1,13 @@
+@use 'variaveis';
+
+.hero {
+    padding: 5.6vw;
+    min-height: 80vh;
+    background-size: cover;
+    max-width: 100%;
+    width: 1700px;
+    border-radius: 60px;
+    margin: 76px auto;
+    margin-bottom: 0;
+    box-shadow: 1px 1px 600px 1px rgba(255, 217, 0, 0.445);
+}

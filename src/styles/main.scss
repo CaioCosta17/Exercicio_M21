@@ -1,0 +1,96 @@
+@use 'variaveis';
+@use 'hero';
+@use 'plans';
+@use 'shows';
+@use 'faq';
+@use 'header';
+
+@font-face {
+    font-family: Cardinal;
+    src: url(../../assets/fonts/Cardinal.ttf);
+    font-weight: 400;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    list-style: none;
+}
+
+body {
+    background-color: variaveis.$corDeFundo;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 24px;
+    width: 100%;
+    height: 60px;
+    font-size: 18px;
+    color: variaveis.$corTextoSecundaria;
+    background-color: variaveis.$corDeFundoBotaoPrimario;
+    text-transform: uppercase;
+    border-radius: 4px;
+    margin-top: 2vw;
+    margin-bottom: 8px;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 8px 14px;
+    border: 1px solid variaveis.$corDeFundoBotaoPrimario;
+
+    &--secondary {
+        background-color: variaveis.$corDeFundoBotaoSecundario;
+        border-color: variaveis.$corDeFundoBotaoSecundario;
+        color: black;
+    }
+
+    &--dark {
+        background-color: rgba(variaveis.$corDeFundoBotaoDark, 0.8);
+        border-color: variaveis.$corTextoSecundaria;
+
+        &:hover {
+            background-color: variaveis.$corTextoSecundaria;
+            color: variaveis.$corDeFundo;
+        }
+    }
+}
+
+@mixin text($fontSize: 16px) {
+    font-size: $fontSize;
+    line-height: $fontSize + 10px;
+    color: variaveis.$corTextoPrincipal;
+}
+
+@mixin title($fontSize: 28px) {
+    font-family: Dancing Script;
+    @include text($fontSize);
+    color: variaveis.$corTextoTitulo;
+}
+
+.text--small {
+    @include text(12px);
+}
+
+.text {
+    @include text;
+}
+
+.text--big {
+    @include text(18px);
+}
+
+.title--big {
+    @include title(76px);
+}
+
+.title {
+    @include title(40px);
+}
+
+.title--small {
+    @include title;
+}
